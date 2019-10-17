@@ -11,7 +11,7 @@ export default function App() {
                     <title>Sidharth's Boggle</title>
                 </head>
                 <body>
-                    <h1>Welcome to Boggle!</h1>
+                    <h1>Let's Play Boggle!</h1>
                     <h3> by <br /> Sidharth Lakshmanan </h3>
                     <div className= 'description'>
 
