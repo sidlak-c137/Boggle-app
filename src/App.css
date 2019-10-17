@@ -9,22 +9,44 @@ h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .appWindow {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     align-content: center;
     background-color: black;
-    outline: dashed;
 }
 
 .appLight {
     background-color: lightblue;
     margin-left: 10vw;
     margin-right: 10vw;
-    height: 100vh;
+    height: auto;
+    min-height:100vh;
     max-width: 80vw;
     text-align: center;
-    outline:dashed;
 }
+
+.description {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    outline: dashed;
+    width: 70vw;
+    height: 60vh;
+}
+
+.fab {
+    margin: 1px;
+}
+
+.extendedIcon {
+    margin-right: 1px;
+}
+
+.navigation {
+    margin-top: 5vh;
+    min-height: 10vh;
+}
+
+
 
 
 
