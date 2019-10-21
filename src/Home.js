@@ -6,17 +6,21 @@ import { GAME_ROUTE } from './routes';
 import { Redirect } from 'react-router-dom';
 
 class Home extends React.Component {
-    state = {
-        ready : false,
-    };
-
+    constructor() {
+        super();
+        this.state = {
+            ready: false,
+        };
+        this.goToGame = this.goToGame.bind(this);
+    }
+    
     goToGame() {
-        this.state.ready = true;
+        this.setState({ ready: true });
     }
 
     render() {
-        if (this.state.reader == true) {
-            return <Redirect to={GAME_ROUTE} />
+        if (this.state.ready === true) {
+            return (<Redirect to={GAME_ROUTE} />);
         }
         return (
             <div className='appWindow'>
@@ -31,7 +35,7 @@ class Home extends React.Component {
 
                         </div>
                         <div className='navigation' >
-                            <Fab variant="extended" color="primary" onClick={this.goToGame()}>
+                            <Fab variant="extended" color="primary" onClick={this.goToGame}>
                                 Play Game!
                             </Fab>
                         </div>
