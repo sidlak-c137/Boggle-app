@@ -29,7 +29,7 @@ class Home extends React.Component {
                         <title>Sidharth's Boggle</title>
                     </head>
                     <body>
-                        <h1>Boggle!</h1>
+                        <h1>Welcome to Boggle!</h1>
                         <h3> by <br /> Sidharth Lakshmanan </h3>
                         <div className='description'>
 
